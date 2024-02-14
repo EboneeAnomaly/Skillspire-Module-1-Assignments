@@ -1,0 +1,65 @@
+h1 {
+    font-size: 24px;
+    color: rgb(146, 192, 235);
+    font-family: "Tinos", "Georgia", "Arial";
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+    #headshot {
+        position: fixed;
+        margin-left: 10px;
+        bottom: 65px;
+        width: 50px;
+        height: 320px;
+        border-radius: 20px;
+        border: 5px solid white;
+        background-color:  rgb(146, 192, 235);
+        border: outset 8px rgb(255, 233, 224); width: 255px; padding: 20px;
+    }
+
+   
+   
+   #date{;
+    position: top;
+    font-size: 15px;
+    color: rgb(146, 192, 235);
+    font-family: "Tinos", "Georgia", "Arial";
+    text-align: right;
+   }
+
+   .list {
+       background-color: rgb(147, 185, 224);
+       border: outset 8px rgb(255, 233, 224); width: 150px; padding: 20px;
+       color: white;
+       font-family: "Merriweather", "Georgia", "Arial";
+       margin: 0 auto;
+       text-align: left;
+   }
+
+   .listheaders {
+       color:rgb(241, 187, 86);
+       text-decoration: rgb(255, 180, 205) underline;
+       text-align: center;
+
+   }
+
+   .divline {
+       border:none;
+       border-top: 2px solid white;
+       margin: 10px 0;
+   }
+
+   body {
+       background-color: rgb(251, 245, 234);
+   }
+
+   #navlinks {
+    display: inline;
+       text-decoration: none;
+       color: black;
+       font-family: "Tinos", "Georgia", "Arial";
+       padding: 10px;
+       font-weight: bold;
+       
+   }

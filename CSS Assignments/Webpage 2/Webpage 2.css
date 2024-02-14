@@ -1,0 +1,186 @@
+#titleheader{
+    color: #82858a;
+    position: absolute;
+    left: 450px;
+    width: 500px;
+    font-family: monospace;
+    
+}
+
+#logo {
+    position: absolute;
+    left: 70px;
+    width: 115px;
+    height: 115px;
+}
+
+
+#banner {
+    background-color: aquamarine;
+    color: #6c6c6c;
+    background-image: linear-gradient(#6ba3a7, 
+    #e3dedf);
+    font-family: monospace;
+    font-size: 39px;
+    position: absolute;
+    left: 150px;
+    top: 145px;
+    text-align: center; padding-top: 50px;
+    width: 1000px;
+    height: 90px;
+}
+
+.navlinks {
+    color: #4998a4;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+    left: 330px;
+    top: 40px;
+    padding: 29px;
+    
+
+}
+
+
+.divline {
+    border: none;
+            border-top: 2px solid rgb(0, 0, 0);
+            margin: 195px 0;
+            
+}
+
+#dots {
+    color: #6c6c6c;
+    font-weight: bold;
+    font-size: 92px;
+    position: absolute;
+    top: 99px;
+    left: 590px;
+}
+
+#Lpurple-block {
+    background-color: #e2e3fc;
+    font-size: 13px;
+    border-radius: 10px;
+    width: 300px;
+    height: 345px;
+    position: absolute; 
+    top: 320px;
+    left: 115px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+#Pink-block {
+    background-color: #f0d9e7;
+    font-size: 13px;
+    border-radius: 10px;
+    width: 300px;
+    height: 345px;
+    position: absolute; 
+    top: 320px;
+    left: 485px;
+    padding-left: 15px;
+    padding-right: 10px;
+
+}
+
+
+#Dpurple-block {
+    background-color: #d1c1d7;
+    font-size: 13px;
+    border-radius: 10px;
+    width: 300px;
+    height: 345px;
+    position: absolute; 
+    top: 320px;
+    left: 855px;
+    padding-left: 15px;
+    padding-right: 10px;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+
+
+#label-1 {
+    position: relative;
+    top: 10px;
+    right: 3px;
+    font-size: 15px;
+}
+
+#dentists-name {
+    position: absolute;
+    top: 125px;
+    left: 10px;
+    width: 275px;
+
+}
+
+#label-2 {
+    position: relative;
+    top: 59px;
+    left: -145px;
+    font-size: 15px;
+}
+
+
+#dentists-last-name{
+    position: absolute;
+    top: 175px;
+    left: 10px;
+    width: 275px;
+}
+
+#label-3 {
+    font-size: 15px;
+    position: absolute;
+    top: 209px;
+    left: 09px;
+    width: 275px;
+}
+
+#dentists-location {
+    position: absolute;
+    top: 225px;
+    left: 10px;
+    width: 275px;
+
+}
+
+input[type="text"] {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#dentist-question {
+    font-size: 15px;
+    position: absolute;
+    top: 235px;
+    left: 10px;
+}
+
+#dentist-choice {
+    position: absolute;
+    top: 290px;
+}
+
+#graytext {
+    color:#82858a;
+}
+
+h2 {
+   text-align: center;
+
+}
+
+#spacer {
+    position: relative;
+    left: 10px;
+}

@@ -1,0 +1,113 @@
+#nav-links {
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 1240px;
+    position: relative;
+    top: -19px;
+    left: -4px;
+    text-align: center;
+    font-size: 14px;
+    font-family: serif;
+    font-weight: 99;
+    
+}
+
+#nav-text {
+position: relative;
+top: 16px;
+}
+
+#side-nav {
+    border: 4px;
+    border-color: #8b2be2;
+    border-style: solid;
+    border-radius:10px;
+    width: 250px;
+    height: 405px;
+    position: relative;
+    top: -25px;
+    font-size: 12px;
+}
+
+#side-nav-header {
+    font-size: 19px;
+    position: relative;
+    left: -40px;
+
+
+}
+
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    position: absolute;
+    left: 420px;
+    top: 61px;
+
+}
+
+.boxes-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    position: absolute;
+    left: 420px;
+    top: 270px;
+
+}
+
+.boxes-styling {
+    background-color: #fffc04;
+    border-radius: 10px;
+    text-align: center;
+    width: 175px;
+    height: 202px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+   
+
+}
+
+.blue-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 485px;
+
+}
+
+.blue-box-style {
+background-color: #02138c;
+color: white;
+width: 395px;
+height: 135px;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+}
+
+#nav-links-2 {
+    color: white;
+    background-color: black;
+    height: 49px;
+    width: 1240px;
+    position: relative;
+    top: 102px;
+    left: -4px;
+    text-align: center;
+    font-size: 14px;
+    font-family: serif;
+    font-weight: 99;
+    
+    
+}
+
+#nav-text-2 {
+    position: relative;
+    top: 18px;
+    }

@@ -1,0 +1,52 @@
+#header {
+    display: block;
+    background-color: red;
+    border-radius: 10px; width: 1265px; height: 70px;
+    text-align: center;
+    font-size: 25px;
+    position:relative;
+    top: -15px;
+    left: 0px
+}
+
+#sidenav {
+    display: block;
+    background-color: #26c2c1;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 85px
+
+}
+
+#body {
+    display: block;
+    background-color: black;
+    border-radius: 10px;
+    width: 1045px;
+    height: 450px;
+    position: absolute;
+    left: 220px;
+    top: 60px;
+    color: white;
+}
+
+#footer {
+    display: block;
+    background-color: gray;
+    border-radius: 10px;
+    width: 1265px;
+    height: 115px;
+    position: absolute;
+    top: 535px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+body {
+    background-color: blue;
+}
