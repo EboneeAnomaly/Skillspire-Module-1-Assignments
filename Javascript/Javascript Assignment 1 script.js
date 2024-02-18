@@ -1,13 +1,20 @@
 console.log("Hello World")
 
-document.write('<br>')
-document.write('<br>')
+var color = "Ebonee's favorite color is blue"
 
-console.log("Ebonee's favorite color is blue")
+console.log(color)
 
-document.write('<br>')
-document.write('<br>')
+var number1 = 2
+var number2 = 2
 
-console.log("10 + 11 = 21")
+console.log(2 +2)
 
-console.log('Ebonee' + 'Singleteary')
+var name = "Ebonee" + "Singleteary"
+
+console.log(name)
+
+for (let i = 1; i <11; i++) {
+    console.log (i)
+}
+
+for ()
