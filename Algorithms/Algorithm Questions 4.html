@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Questions 4</title>
+    <script>
+        function largeNum(numArray){
+    // we declare our function, name our function, and name our array
+
+let max = numArray[0];
+// we assign the variable 'max' to our array 'numArray' and start with the first value of our
+// array (which is 0 because arrays are 0-indexed which means they start at 0)
+
+for(i = 1; i < numArray.length; i++) {
+     // This will iterate through the elements of our Array starting at 1
+    // we initiate our for loop, assign index to '1', and tell it numArray.length which tells it
+    // to return the number of elements in that array (that's what the .length property does.)
+    // when used in a for loop, it's commonly used as the condition to determine how many iterations the
+
+    if (numArray[i] > max) {
+     // we create an If conditional statment, and check if the current element is greater than
+     // the 'max'
+        max = numArray[i];
+        // if so, it will update 'max' with the current element
+       
+    }
+  
+}
+return max;
+        // then we tell it to return with the updated 'max'
+        }
+
+        var result = largeNum([1, 2, 3, 4, 5]);
+        console.log(result);
+
+
+
+        // ------
+
+
+        function smallNum(numArray2){
+
+let min = numArray2[0];
+
+for(i = 1; i < numArray2.length; i++) {
+  
+    if (numArray2[i] < min) {
+     
+   
+        min = numArray2[i];
+      
+    }
+  
+}
+return min;
+
+        }
+
+        var result2 = smallNum([1, 2, 3, 4, 5]);
+        console.log(result2);
+</script>
+</head>
+<body>
+    
+</body>
+</html>
