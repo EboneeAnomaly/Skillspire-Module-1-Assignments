@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Add User, initial-scale=1.0">
+    <title>User Info Page</title>
+</head>
+
+<body>
+    <h1>User {{ .id }} </h1>
+
+<h3>Full Name:</h3> {{ .fullname }}
+<h3>Email:</h3> {{ .email }}
+<h3>Created at:</h3> {{ .createdAt }}
+
+<a href="#">Edit</a> <p>|</p> <a href="#">Delete</a>
+</body>
+</html>

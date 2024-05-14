@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+// --- Al #1 Reversed String ---
+function backwords(string){
+    let words = string.split('');
+    // declared my function and then told it to split the string 'string' into an array
+    let wordsReversed = words.reverse();
+// then I told it to reverse that array
+    let inverseWords = wordsReversed.join('');
+// then I told it to join that array, while still reversed
+    console.log(inverseWords);
+    // then I told it to print that joing array to the console
+}
+
+backwords('string');
+
+// --- Al #2 Palidrome Checker ---
+function reversedString(str){
+    return str.split("").reverse().join("");
+}
+// I told my function to split, reverse, and then join that string in the reversed order
+var theString = "hello"
+var reversedString = reversedString(theString);
+// I declared theString as the value I want to be able to check for Palindrome status, and
+
+if(theString === reversedString){
+    console.log("True")
+}
+else{
+    console.log("False")
+}
+// I then created an if else statement that says if the non-reversed string value is the same as the reversed string
+//value, to print true
+// else, print false
+
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

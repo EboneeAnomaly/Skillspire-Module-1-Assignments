@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/designlayout.css">
+</head>
+<body>
+
+<h1>Sign Up</h1>
+
+<form method="POST" action="/signup" id="signup-form" class="signup-form">
+
+<label>Email</label>
+<input type="text" name="email" id="email">
+
+<label>Username</label>
+<input type="text" name="username" id="username">
+
+
+<label>Password</label>
+<input type="password" name="password" id="password">
+
+<button type="submit" class="signup-button">Signup</button>
+
+</form>
+
+
+
+<script>
+    $(document).ready(function() {
+        // Intercept form submission
+        $("#signup-form").submit(function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Collect form data
+            var formData = $(this).serialize();
+
+            // Send data via AJAX
+            $.ajax({
+                type: "POST",
+                url: "/signup",
+                data: formData,
+                success: function(response) {
+                    // Handle success response (e.g., redirect user)
+                    window.location.href = "/login";
+                },
+                error: function(xhr, status, error) {
+                    // Handle error response (e.g., display error message)
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

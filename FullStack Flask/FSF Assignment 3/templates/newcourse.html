@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='DRT Stylesheet.css') }}"/>
+</head>
+<body>
+  <h2>Add a new course</h2>
+    <div class="table-container">
+        <form class="form-container">
+            <label>Name</label>
+            <input type="text" name="name" id="name" class="name-box">
+
+            <label>Description</label>
+            <input type="text" name="description" id="description" class="description-box">
+
+            <button type="submit" class="button-style">Add</button>
+        </form>
+
+
+
+    <table class="table-style">
+      <thead>
+        <tr>
+            <th>Course Name</th>
+            <th>Description</th>
+            <th>Date Added</th>
+            <th>Actions</th>
+        </tr>
+
+      </thead>
+      <tbody class="tbody-style">
+        {% for course in courses %}
+        <tr>
+            <td> {{ course['Course Name'] }} </td>
+            <td> {{ course['Description'] }} </td>
+            <td> {{ course['Date Added'] }} </td>
+            <td> <a href="/destroy"> {{ course['Actions'] }} </a> </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      
+    </table>
+</div>
+
+
+
+</body>
+</html>

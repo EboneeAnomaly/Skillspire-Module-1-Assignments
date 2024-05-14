@@ -1,0 +1,68 @@
+.name-box{
+    width: 235px;
+}
+
+.description-box{
+    width: 235px;
+    height: 55px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-container input{
+    margin-bottom: 10px;
+}
+
+.form-container label{
+    margin-right: 10px;
+}
+
+.button-style{
+    background-color: green;
+    width: 40px;
+    height: 30px;
+    margin-top: 2.5px;
+    margin-bottom: 10px;
+    border: outset, black, 4px;
+    color: white;
+}
+
+.table-style{
+    border-collapse: collapse;
+    width: 100%
+}
+
+.table-style th, .table-style td{
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+.table-style th{
+    text-align: left;
+    background-color: #cccccc;
+}
+
+.row-color{
+    background-color: #efeeee;
+}
+
+.table-style tr:nth-child(odd){
+    background-color: #efeeee;
+}
+
+.noButton-style{
+    background-color: grey;
+    color: white;
+    border: solid black 2px;
+    
+}
+
+.yesButton-style{
+    background-color: rgb(130, 24, 24);
+    color: white;
+    border: solid black 2px;
+}

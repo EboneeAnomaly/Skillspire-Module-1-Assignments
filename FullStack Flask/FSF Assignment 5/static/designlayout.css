@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'MistysRelrica';
+    src: url('/static/fonts/MistysRelrica.ttf') format('truetype');
+    
+}
+
+@font-face {
+    font-family: 'MistysRelricaItalic';
+    src: url('/static/fonts/MistysRelrica.ttf') format('truetype');
+    font-style: italic;  
+}
+
+
+    /*Login Page */
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.photo-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.photo-row img{
+    max-width: 25%;
+    height: auto;
+    max-width: 25%;
+   
+}
+
+.greeting-text{
+    text-align: center;
+    color: white;
+    font-family: 'MistysRelrica';
+    -webkit-text-stroke-width: 0.10px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.greeting-text2{
+text-align: center;
+font-family: Haettenschweiler;
+color: white;
+}
+
+.login-body{
+    background-image: url('bggif.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.divider {
+    border-top: 1px solid white; 
+    margin-top: 20px; 
+}
+
+.highlight-text{
+    color: rgb(147, 147, 240);
+    font-weight: bold;
+    text-align: center;
+}
+
+.label-style{
+color: white;
+font-family: 'MistysRelrica';
+-webkit-text-stroke-width: 0.30px;
+-webkit-text-stroke-color: black;
+text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.login-h3{
+    color: white;
+    background-color: rgb(145, 145, 173);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 17px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Homepage */
+
+.upload-box{
+    width: 300px; 
+    height: 150px; 
+    background-color: rgb(190, 151, 220); 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    position: absolute; left: 190px; top: 85px; 
+    
+}
+
+.homepage-body{
+    background-image: url('hpbg.jpg');
+}
+
+.upload-text{
+    font-family: 'MistysRelrica';
+    color: white;
+    background-color: rgb(112, 112, 176);
+    border-radius: 10px;
+    padding: 5px;
+    width: 50px;
+    height: 17px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.banner{
+    color: white;
+font-family: 'MistysRelrica';
+-webkit-text-stroke-width: 0.30px;
+-webkit-text-stroke-color: black;
+text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+font-size: 25px;
+}
+
+.greeting{
+    color: white;
+    background-color: rgb(90, 151, 221);
+    border-radius: 12px;
+    width: 30%;
+    text-align:justify;
+    height: 25%;
+}
+
+.homepagephoto-row img{
+    width: 300px;
+    height: 300px;
+}
+
+.homepagephoto-row{
+  display: flex;
+  flex-direction: column;
+  float: right;  
+}
+
+.signup-link{
+    font-weight: bold; 
+    color: aliceblue;
+    top: 10px;
+}
+
+.edit-button{
+background-color: white;
+border-radius: 100px;
+filter: drop-shadow(5px 5px 0px #3a81c3);
+position: relative; top: -4px;
+}
+
+.delete-button{
+background-color: white;
+border-radius: 100px;
+filter: drop-shadow(5px 5px 0px #3a81c3);
+position: relative; left: 70px; top: -6px;
+}
+
+.logout-button{
+background-color: white;
+border-radius: 100px;
+filter: drop-shadow(5px 5px 0px #3a81c3);
+width: 20px;
+padding: 5px;
+position: relative; left: 20px; top: 215px;
+}
+
+.user-uploads{
+    background: rgb(230, 222, 203);
+    width: 200px;
+    position: relative; top: 200px;
+}
+
+
+/* Signup Page */
+
+.signup-form{
+display: flex;
+flex-direction: column;
+width: 25%;
+}
+
+.signup-button{
+width: 20%;
+margin-top: 20px;
+}
+

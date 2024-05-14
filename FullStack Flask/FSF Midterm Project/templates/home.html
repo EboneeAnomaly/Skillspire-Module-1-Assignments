@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/static/GNHstylesheet.css">
+</head>
+<body class="body-home">
+
+    <div id="popup-messages"></div>
+
+    <header class="nav">
+        <ul class="nav-links">
+
+    <li><a href="/shop"><img src="/static/shopping_icon.png" alt="shop"></a>Shop</li>
+    <li><a href="/rooms.html"><img src="/static/rooms_icon.png" alt="Rooms"></a>Rooms</li>
+    <li class="logo-style"><a href="/home">  <img src="/static/logo_icon.png" alt="Logo"></a>Great Northern</li>
+    <li><a href="/guests"><img src="/static/guests_icon.png" alt="Guests"></a>Guests</li>
+    <li><a href="/amenities.html"><img src="/static/amenities_icon.png" alt="amenities"></a>Amenities</li>
+
+
+    </ul>
+    </header>
+
+    <div class="about-section">
+    <img class="home-images" src="/static/gnh1.jpg">
+
+    <p class="about-text">
+        
+    <b style="font-size: 29px; color: brown;">About</b>
+
+    In the late 1940's, Twin Peaks's beloved Department Store magnate, J.J. Horne, opened <i style="color: brown;">The Great Northern Hotel</i>.
+    Desiring a destination where guests could take in the natural majesty Twin Peaks's offers, he situated his vision on the bluffs above
+    White Tail Falls.
+    His son, Benjamin Horne, succeded his father in running the establishment in 1980, where he continues to run it to this day.
+    </p>
+
+    </div>
+
+
+
+
+    <div class="town-section">
+        
+
+    <p class="town-text">
+    <b style="font-size: 29px; color: brown;">Town</b>
+
+    Nestled between the White Tail Mountain and Blue Pine Mountain, Twin Peaks (which draws its name from this geographical fact) is a small
+    logging community in northeast Washington State.
+    Though small, it boasts many fabulous amenities such as lush hiking trails, local artisan offerings, community minded atmosphere, beautiful vistas, and a rich, cultural history.
+
+    
+    
+    <span class="town-closer"> We cordially invite you to put your feet up in mountainscape luxury - The Hornes </span>
+
+    </p>
+
+    <img class="home-images" src="/static/gnh2.jpg">
+
+    </div>
+
+    <form action="/login" method="POST">
+
+        <label class="home-label">Username</label>
+        <input type="text" id="username" name="username">
+
+        <label class="home-label">Password</label>
+        <input type="text" id="password" name="password">
+
+        <button type="submit">Login</button>
+
+    </form>
+<br>
+    <a style="font-weight: bolder; color: brown;" href="/signup">Sign Up</a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        
+        function fetchPopupMessages() {
+            $.get("/popup-message", function(messages) {
+                messages.forEach(function(message) {
+                    
+                    alert(message[0]);
+                });
+            });
+        }
+
+       
+        $(document).ready(function() {
+            fetchPopupMessages();
+        });
+    </script>
+
+</body>
+</html>

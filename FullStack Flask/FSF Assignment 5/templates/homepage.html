@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="/static/designlayout.css">
+</head>
+
+<body class="homepage-body">
+    <div class="banner"> <span>Inner Piece</span> </div>
+
+    <div class="homepagephoto-row">
+        <img src="{{ url_for('static', filename='hp1.jpg') }}" alt="Image">
+        <img src="{{ url_for('static', filename='hp2.jpg') }}" alt="Image">
+        <img src="{{ url_for('static', filename='hp3.jpg') }}" alt="Image">
+        <img src="{{ url_for('static', filename='hp4.jpg') }}" alt="Image">
+     </div>
+
+     <div class="greeting">Please upload unique furniture pieces, or interior design shots! </div>
+
+     <form class="upload-box" method="POST" action="/upload" enctype="multipart/form-data">
+        <label class="upload-text">Upload an interior/furniture photo:</label> <br>
+        <input type="file" id="userUpload" name="userUpload"> <br>
+
+        <label for="title">Title:</label> <br>
+        <input type="text" id="title" name="title"> <br>
+
+        <label for="content">Content:</label> <br>
+        <textarea id="content" name="content"></textarea> <br>
+
+        <input type="submit" value="Create Post">
+    </form>
+
+
+    <div class="user-uploads">
+        {% for post in posts %}
+            <div class="post">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.content }}</p>
+                <p>Posted by: {{ post.user.username }}</p>
+                {% if post.user_id == session['user_id'] %}
+                    <a href="{{ url_for('edit_post', post_id=post.id) }}" class="edit-button">Edit</a>
+                    <form action="{{ url_for('delete_post', post_id=post.id) }}" method="post" style="display: inline;">
+                        <button type="submit" class="delete-button">Delete</button>
+                    </form>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+
+ </div>
+</body>
+</html>

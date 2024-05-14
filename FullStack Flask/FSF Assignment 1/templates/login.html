@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .login_heaer{
+            font-weight: bold;
+            font-size: large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="login_header">Please Enter User Info</h1>
+    <form method="POST" action="/login">
+        <label>Enter Username</label>
+        <input type="text" id="username" name="username"> <br>
+        
+        <label>Enter Password</label>
+        <input type="text" id="password" name="password"> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

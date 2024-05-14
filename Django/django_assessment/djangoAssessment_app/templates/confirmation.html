@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'djangoAssessment.css' %}">
+</head>
+
+<body>
+    <h3>Thank you for your submission!</h3>
+
+    <p>
+        First Name: {{ firstname }} <br>
+        Last Name: {{ lastname }} <br>
+        Phone: {{ phone }} <br>
+        Street Address: {{ streetaddress }} <br>
+        State: {{ state }} <br>
+        Zip Code: {{ zip }}
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let numArr = [1,2]
+
+        function revNum(numArr){
+            let revArr = numArr.slice(0).reverse();
+            return revArr;
+        }
+
+        let backwardsArr =  revNum(numArr)
+        console.log(backwardsArr);
+
+        let arrOne = [1, 2, 3, 4, 5, 6]
+
+        function swapArr(){
+            for (let i = 0; i < arrOne.length - 1; i += 2){
+                let hold = arrOne[i];
+                arrOne[i] = arrOne[i + 1];
+                arrOne[i + 1] = hold;
+            }
+            console.log(arrOne)
+
+        }
+
+        swapArr();
+
+        let arrTwo = [1, 2, 3, 4, 5,]
+
+        function shiftArr(){
+            for (let i = 0; i < arrTwo.length; i++){
+                let result = arrTwo.pop(1);
+                
+
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

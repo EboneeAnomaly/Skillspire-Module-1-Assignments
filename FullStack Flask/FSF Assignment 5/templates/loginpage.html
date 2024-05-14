@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/designlayout.css">
+</head>
+
+<body class="login-body">
+
+    <div class="divider"></div>
+
+ <h1 class="greeting-text">Welcome to Inner Piece</h1>   
+ <h3 class="greeting-text2">A site for sharing unique furniture <span class="highlight-text">Pieces</span> and interior design.</h3>
+
+ <div class="photo-row">
+    <img src="{{ url_for('static', filename='Interioredit1.png') }}" alt="Image">
+    <img src="{{ url_for('static', filename='Interioredit2.png') }}" alt="Image">
+    <img src="{{ url_for('static', filename='Interioredit3.png') }}" alt="Image">
+    <img src="{{ url_for('static', filename='Interioredit4.png') }}" alt="Image">
+ </div>
+
+ <div class="divider"></div>
+
+ <h3 class="login-h3">Login:</h3>
+
+ <form method="POST" action="/login" class="login-form">
+    <label class="label-style">Username</label>
+    <input type="text" id="username" name="username">
+
+    <label class="label-style">Password</label>
+    <input type="password" id="password" name="password">
+
+    <button type="submit">Login</button>
+ </form>
+
+ <a href="/signup" class="signup-link">Signup</a>
+</body>
+</html>

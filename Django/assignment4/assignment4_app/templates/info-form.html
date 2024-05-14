@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Form</title>
+</head>
+
+<body>
+    <form method="post" action="{% url 'form-data' %}">
+        {% csrf_token %}
+        <label>First Name:</label>
+        <input type="text" name="firstname" id="firstname">
+
+        <label>Last Name:</label>
+        <input type="text" name="lastname" id="lastname">
+
+        <label>Email:</label>
+        <input type="text" name="email" id="email">
+
+        <label>Favorite Food:</label>
+        <input type="text" name="favoritefood" id="favoritefood">
+
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

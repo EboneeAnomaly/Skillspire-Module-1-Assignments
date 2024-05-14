@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guests</title>
+    <link rel="stylesheet" type="text/css" href="/static/GNHstylesheet.css">
+</head>
+
+
+<body class="body-home">
+
+
+    <header class="nav">
+        <ul class="nav-links">
+
+    <li><a href="/shop"><img src="/static/shopping_icon.png" alt="shop"></a>Shop</li>
+    <li><a href="/rooms.html"><img src="/static/rooms_icon.png" alt="Rooms"></a>Rooms</li>
+    <li class="logo-style"><a href="/home">  <img src="/static/logo_icon.png" alt="Logo"></a>Great Northern</li>
+    <li><a href="/guests"><img src="/static/guests_icon.png" alt="Guests"></a>Guests</li>
+    <li><a href="/amenities.html"><img src="/static/amenities_icon.png" alt="amenities"></a>Amenities</li>
+
+
+    </ul>
+    </header>
+
+
+    <h1 class="guests-header">Great Nothern Family</h1>
+
+    <br>
+
+    <<div class="guests-section">
+        <h2 class="guests-header2">Guest List</h2>
+        <table class="guests-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Action</th>
+            </tr>
+        </thead>
+         <tbody class="guests-table">
+                {% for guest in guests %}
+                    <tr>
+                    <td>{{ guest.email }}</td>
+                    <td>{{ guest.username }}</td>
+                    <td>
+
+                    <a href="{{ url_for('edit_guest', guest_id=guest.id) }}">Edit</a>
+                    <form action="{{ url_for('delete_guest', guest_id=guest.id) }}" method="post" style="display: inline-block;">
+                    <button type="submit">Delete</button>
+                    </form>
+                    </td>
+                    </tr>
+                {% endfor %}
+     </tbody>
+    </table>
+    </div>
+    
+    </body>
+   
+    
+</body>
+</html>

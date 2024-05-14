@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>User List</h1>
+    <ul>
+        {% for user in users %}
+            <li>
+                <a href="{% url 'user_detail' user.id %}">{{ user.name }}</a> 
+                Height: {{ user.height }},
+                Weight: {{ user.weight }},
+                Dietary Preference: {{ user.dietary_preference }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

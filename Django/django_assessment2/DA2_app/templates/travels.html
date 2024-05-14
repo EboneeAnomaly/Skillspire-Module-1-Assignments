@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travels</title>
+</head>
+
+<body>
+    <a href="#">Logout</a>
+
+    <h1> Hello, {{ .name }}!</h1>
+
+    <table>
+        <h3>Your Trip Schedules</h3>
+
+        <tr>
+        <th>Destination </th>
+        <th>Travel Start Date</th>
+        <th>Travel End Date</th>
+        <th>Plan</th>
+        </tr>
+
+        <tr>
+        <td>{{ trip.destination }}</td>
+        <td>{{ trip.from_datetime }}</td>
+        <td>{{ trip.to_datetime }}</td>
+        <td>{{ trip.description }}</td>
+        </tr>
+
+    </table>
+
+    <h3>Other User's Travel Plans</h3>
+    <table>
+        {% for other_trip in other_user_trips %}
+        <tr>
+            <td>{{ other_trip.name }}</td>
+            <td>{{ other_trip.destination }}</td>
+            <td>{{ other_trip.from_datetime }}</td>
+            <td>{{ other_trip.to_datetime }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+    <a href="add.html">Add Travel Plan</a>
+
+</body>
+</html>

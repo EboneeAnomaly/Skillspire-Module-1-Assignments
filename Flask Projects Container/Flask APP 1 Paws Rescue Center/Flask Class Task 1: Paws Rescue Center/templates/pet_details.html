@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pet.name }} Details</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+</head>
+<body>
+    <div class="=container2">
+        <h1>{{ pet.name }} Details</h1>
+
+        <div class="pet-details">
+            <div class="container">
+                <h1>{{ pet.name }} Details</h1>
+                <div class="pet-details">
+                    <img src="{{ url_for('static', filename='img/' + pet.id) }}" alt="{{ pet.name }}">
+                    <p><strong>Name:</strong> {{ pet.name }}</p>
+                    <p><strong>Type:</strong> {{ pet.type }}</p>
+                    <p><strong>Age:</strong> {{ pet.age }}</p>
+                    <p><strong>Bio:</strong> {{ pet.bio }}</p>
+                </div>  
+
+
+        </div>
+    </div>
+</body>
+</html>

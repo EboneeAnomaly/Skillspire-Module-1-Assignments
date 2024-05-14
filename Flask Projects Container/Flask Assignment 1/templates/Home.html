@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=M, initial-scale=1.0">
+    <title>About Me Homepage</title>
+</head>
+<body>
+    <div>
+    <h1>First Name: Ebonee</h1> <br>
+    <h1>Last Name: Singleteary</h1> <br> 
+    <h1>Favorite Food: Gumbo</h1> <br> 
+     <h1>Favorite Vacation Destination: New Orleans</h1> 
+</div>
+
+{% for number in range(1, 11) %}
+            {% if number % 2 == 0 %}
+                <li>{{ number }} Even</li>
+            {% else %}
+                <li>{{ number }} Odd</li>
+            {% endif %}
+        {% endfor %}
+</body>
+</html>

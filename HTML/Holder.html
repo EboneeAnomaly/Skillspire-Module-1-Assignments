@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Paws Rescue Center</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+</head>
+<body>
+    <div class="container">
+    <h1>Paws Rescue Center 🐾</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Bio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pet in pets %}
+            <tr> 
+                <td>{{ pet.id }}</td>
+                <td>{{ pet.name }}</td>
+                <td>{{ pet.type }}</td>
+                <td>{{ pet.age }}</td>
+                <td>{{ pet.bio }}</td>
+
+
+                <td><img src="{{ url_for('static', filename='img/maple.jpg') }}"></td>
+                <td>Maple</td>
+                <td>7 years</td>
+                <td class="bioText">I am a sassy corgi named Maple</td>
+               
+            </tr>
+            {% endfor %}
+
+            <tr>
+                
+                <td><img src="{{ url_for('static', filename='img/morty.jpg') }}"></td>
+                <td>Morty</td>
+                <td>4 years</td>
+                <td class="bioText">I am a neurotic corgi named Morty</td>
+                
+            </tr>
+            <tr>
+                <td><img src="{{ url_for('static', filename='img/cubby.jpg') }}"></td>
+                <td>Cubby</td>
+                <td>3 years</td>
+                <td class="bioText">I am an adventurous corgi named Cubby</td>
+            </tr>
+            <tr>
+                
+                <td><img src="{{ url_for('static', filename='img/GumGum.jpg') }}"></td>
+                <td>GumGum</td>
+                <td>5 years</td>
+                <td class="bioText">I am a feisty hedgehog named GumGum</td>
+                
+            </tr>
+        </tbody>
+    </table>
+   
+</div>
+</body>
+</html>

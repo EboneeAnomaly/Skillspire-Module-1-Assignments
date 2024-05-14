@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="/static/GNHstylesheet.css">
+</head>
+
+<header class="nav">
+    <ul class="nav-links">
+
+<li><a href="/shop"><img src="/static/shopping_icon.png" alt="shop"></a>Shop</li>
+<li><a href="/rooms.html"><img src="/static/rooms_icon.png" alt="Rooms"></a>Rooms</li>
+<li class="logo-style"><a href="/home">  <img src="/static/logo_icon.png" alt="Logo"></a>Great Northern</li>
+<li><a href="/guests"><img src="/static/guests_icon.png" alt="Guests"></a>Guests</li>
+<li><a href="/amenities.html"><img src="/static/amenities_icon.png" alt="amenities"></a>Amenities</li>
+
+
+</ul>
+</header>
+
+<body class="body-home">
+
+    <form class="sign-up-form" action="/signup" method="POST">
+
+        <label>Email:</label>
+        <input type="text" name="email" id="email">
+
+        <label>Username:</label>
+        <input type="text" name="username" id="username">
+
+        <label>Password:</label>
+        <input type="password" name="password" id="password">
+
+        <button type="submit">Signup</button>
+
+    </form>
+
+</body>
+</html>

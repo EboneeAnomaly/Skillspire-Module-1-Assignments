@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Paws Rescue Center</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+</head>
+<body>
+    <div class="container">
+    <h1 class="homeHead">Paws Rescue Center 🐾</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Age</th>
+                <th >Bio</th>
+            </tr>
+        </thead>
+        <tbody class="table">
+            {% for pet in pets %}
+            <tr> 
+                <td><a href="{{ url_for('pet_details', pet_id=pet.id) }}">
+                    <img src="{{ url_for('static', filename='img/' + pet.id) }}" alt="{{ pet.name }}">
+                </a></td>
+                <td>{{ pet.name }}</td>
+                <td class="text">{{ pet.type }}</td>
+                <td class="text">{{ pet.age }}</td>
+                <td class="text">{{ pet.bio }}</td>
+                
+
+               
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+   
+</div>
+</body>
+</html>

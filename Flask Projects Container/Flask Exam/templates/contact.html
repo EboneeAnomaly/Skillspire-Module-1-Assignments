@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='flask exam.css')}}"/>
+</head>
+<body>
+    
+    <form action="/submit_contact" method="POST" onsubmit="return validateForm()" id="contactForm">
+        <label>First Name:</label>
+        <input type="text" id="firstname" name="firstname" ><br>
+        <br>
+        <label>Last Name:</label>
+        <input type="text" id="lastname" name="lastname"><br>
+        <br>
+        <label>Phone Number:</label>
+        <input type="text" id="phonenumber" name="phonenumber"><br>
+        <br>
+        <label>Street Address:</label>
+        <input type="text" id="streetaddress" name="streetaddress"><br>
+        <br>
+        <label>State:</label>
+        <input type="text" id="state" name="state"><br>
+        <br>
+        <label>Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode"><br>
+
+        <br><button type="submit">Submit</button>
+    </form>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+
+            event.preventDefault();
+
+            var firstName = document.getElementById('firstname').value;
+            var lastName = document.getElementById('lastname').value;
+            var phoneNumber = document.getElementById('phonenumber').value;
+            var streetAddress = document.getElementById('streetaddress').value;
+            var state = document.getElementById('state').value;
+            var zipcode = document.getElementById('zipcode').value;
+
+            if (!firstName || !lastName || !phoneNumber || !streetAddress || !state || !zipcode) {
+                alert('Please fill out all fields.');
+                return false;
+            }
+
+            this.submit();
+        });
+    </script>
+
+</body>
+</html>

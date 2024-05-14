@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Course Page</title>
+</head>
+
+<body>
+    <form action="{% url 'delete_course' course.id %}" method="POST">
+        {% csrf_token %}
+        
+        <h1>Are you sure you want to delete the following course?</h1>
+
+        <p>Name: How to get more energy in the bootcamp</p>
+        <p>Description: Description about this course...</p>
+
+        <button type="submit" name="action" value="cancel">No</button>
+        <button type="submit" name="action" value="delete">Yes! I want to delete this</button>
+    </form>
+
+</body>
+</html>

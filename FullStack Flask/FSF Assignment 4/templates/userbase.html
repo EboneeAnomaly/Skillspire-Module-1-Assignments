@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Base</title>
+    <style>
+        /* Style for table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid black; /* Black border for table */
+}
+
+/* Style for table head */
+thead {
+  background-color: lightgray; /* Gray background for table head */
+}
+
+/* Style for table head cells */
+th {
+  border: 1px solid black; /* Black border for table head cells */
+  padding: 8px;
+}
+
+/* Style for table body */
+tbody {
+  border: 1px solid black; /* Black border for table body */
+}
+
+/* Style for table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Style for table cells */
+td {
+  border: 1px solid black; /* Black border for table cells */
+  padding: 8px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Users</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+    <tbody>
+        {% for user in users %}
+        <tr>
+
+            <td> {{ user.id }} </td>
+            <td><a href="/users/{{ user.id }}">{{ user.full_name }}</a></td>
+            <td> {{ user.email }} </td>
+            <td> {{ user.created_at }} </td>
+            
+            <td>
+            <a href="/users/{{ user.id }}">Show</a>
+            <a href="/update_user/{{ user.id }}">Edit</a>
+            <a href="#" onclick="confirmDelete('{{ user.id }}')">Delete</a>
+            <form id="delete-form-{{ user.id }}" method="POST" action="/users/{{ user.id }}/destroy" style="display: none;"></form>
+            </td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+    <a href ="/adduser">Add a new user</a>
+    <a href ="/userbase">Go Back</a>
+
+    <script>
+        function confirmDelete(userId) {
+            if (confirm('Are you sure you want to delete this user?')) {
+                document.getElementById('delete-form-' + userId).submit();
+            }
+        }
+    </script>
+    
+</body>
+</html>

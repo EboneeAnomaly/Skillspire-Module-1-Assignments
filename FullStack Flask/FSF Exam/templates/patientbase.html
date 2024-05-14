@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patientbase</title>
+    <link rel="stylesheet" type="text/css" href="/static/fsfexamStylesheet.css">
+</head>
+
+<body>
+    <label>Search:</label>
+    <input class="search-field" type="search" id="search" name="search">
+
+    <table>
+
+<thead>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Patient Name</th>
+    <th>Complaint</th>   
+</thead>
+
+<tbody>
+    {% for patient in patients %}
+    <tr>
+    <td> {{patient.date }} </td>
+    <td> {{patient.time }} </td>
+    <td> {{patient.patient_name }} </td>
+    <td> {{patient.complaint }}  </td>
+    <td>
+        <form action="{{ url_for('cancelAppointment', appointment_id=patient.id) }}" method="POST">
+            <button type="submit">Cancel</button>
+        </form>
+        <form action="{{ url_for('deleteAppointment', appointment_id=patient.id) }}" method="POST">
+            <button type="submit">Delete</button>
+        </form>
+    </td>
+</tr>
+{% endfor %}
+</tbody>
+
+</table>
+
+<form action="/newappointment" method="GET">
+    <button class="na-button" type="submit">Add New Appointment</button>
+</form>
+
+<script>
+    function deleteAppointment(appointmentId) {
+        
+        fetch(`/deleteappointment/${appointmentId}`, { method: 'POST' })
+            .then(response => {
+            })
+            .catch(error => {
+                console.error('Error deleting appointment:', error);
+            });
+    }
+
+    function cancelAppointment(appointmentId) {
+            
+            console.log('Cancel appointment with ID:', appointmentId);
+        }
+</script>
+</body>
+</html>

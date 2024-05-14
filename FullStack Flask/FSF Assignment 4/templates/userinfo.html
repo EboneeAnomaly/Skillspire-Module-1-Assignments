@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <style>
+.body-text {
+  display: flex;
+  flex-direction: column;
+}
+    </style>
+</head>
+<body class="body-text">
+<form>
+<label>First Name:</label>
+<input type="text" id="firstname" name="firstname">
+
+<label>Last Name:</label>
+<input type="text" id="lastname" name="lastname">
+
+<label>Email:</label>
+<input type="text" id="email" name="email">
+
+<button type="submit">Update</button>
+
+
+</form>
+<a href="/users/{{ user.id }}">Show</a>   
+</body>
+</html>

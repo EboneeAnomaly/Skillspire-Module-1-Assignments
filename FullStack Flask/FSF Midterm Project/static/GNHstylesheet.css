@@ -1,0 +1,156 @@
+
+@font-face {
+    font-family: 'NationalGothic';
+    src: url('/static/fonts/NationalGothic.otf') format('opentype');
+    
+}
+
+
+
+
+/* Home Page */
+
+.about-section, .town-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-text, .town-text {
+    width: 50%;
+}
+
+
+.home-images{
+width: 300px; 
+height: 200px;
+}
+
+.body-home{
+    background-image: url('background.jpg');
+}
+
+.about-text{
+    background-color: white;
+    border: solid black 4px;
+}
+
+.town-text{
+    background-color: white;
+    border: solid black 4px;
+}
+
+.home-label{
+    color: brown;
+    font-weight: bold;
+}
+
+/* Nav Bar */
+.nav{
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid black 6px;
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 10;
+    color: rgb(33, 112, 38);
+    font-size: 25px;
+    font-family: 'NationalGothic';
+    text-shadow:  2px 2px 4px rgba(255, 128, 109, 0.5)
+    
+}
+
+.nav-links li {
+    margin-right: 135px; 
+}
+
+.nav-links img {
+    width: 100px; 
+}
+
+/* Guests Page */
+.guests-header{
+background-color: white;
+border: solid black 2px;
+border-radius: 6px;
+width: 29%
+}
+
+.guests-header2{
+background-color: white;
+border: solid black 2px;
+border-radius: 6px;
+width: 10%;
+}
+
+.guests-table{
+background-color: white;
+border: solid brown 4px;
+}
+
+.guests-comment-note{
+    font-family: 'NationalGothic';
+    color: brown;
+
+}
+
+.comment-header{
+    font-family: 'NationalGothic';
+    color: green;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 10%;
+    width: 12%;
+    border: solid black 2px;
+}
+
+.post{
+    background-color: white;
+}
+
+
+/* Signup Page */
+.sign-up-form{
+    clear: both; 
+    float: right; 
+    width: 200px;
+    margin-right: 50%; 
+    margin-bottom: 10px; 
+    margin-top: 10%;
+    background-color: white;
+    border: solid brown 4px;
+}
+
+/* Shop  Page */
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    border: solid brown 2px;
+}
+
+.shop-items img{
+    width: 250px;
+    height: 200px;
+}
+
+.shop-greeting{
+    font-family: 'NationalGothic';
+    text-align: center;
+    color: green;
+    text-shadow:  2px 2px 4px rgba(255, 128, 109, 0.5);
+    border: inset black 2px;
+    background-color: white;
+}

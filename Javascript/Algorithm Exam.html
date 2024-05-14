@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Exam</title>
+    <script>
+// # 1 Print 1-255 | Print all integers from 1 to 255
+
+function highCount(){
+  for (let i = 1; i <= 255; i++){
+    console.log(i);
+}
+}
+highCount();
+
+// Print Ints and Sum 0-255 printIntsAndSum0To255(). Print integers from 0 to 255, and with each integer print the sum so far. 
+function intAndSum(){
+    let numHold = 0;
+
+    for (let i = 0; i <= 255; i++){
+        numHold += i;
+        console.log(i, "Sum: ", numHold);
+    }
+    
+}
+intAndSum();
+
+// Print Odds 1-255 printOdds1To255(). Print all odd integers from 1 to 255.
+
+function isOdd(){
+    for (let i = 1; i < 255; i++){
+        if (i % 2 === 1){
+            console.log(i);
+        }
+    }
+}
+isOdd();
+
+// Print Array Values printArrayVals(arr). Iterate through a given array, printing each value.
+
+function throughArr(arr){
+    for (let i = 0; i < 1; i++){
+        console.log(arr)
+    }
+}
+throughArr([1, 2, 3, 4, 5]);
+
+// Return Odds Array 1-255 returnOddsArray1To255(). Create and return an array with all the odd integers between 1 and 255 (inclusive).
+
+function oddArr(arr){
+for (i = 1; i < 255; i++){
+    if ([i] % 2 === 1){
+        console.log("Odd: ", [i]);
+    }
+}
+}
+oddArr();
+
+// Print Max of Array printMaxOfArray(arr). Given an array, find and print its largest element.
+
+function maxArr(arr){
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++){
+        if (arr[i] > max){
+            max = arr[i]
+
+        }
+    }
+    return max;
+}
+console.log(maxArr([1, 2, 4, 5, 18, 6]))
+
+// Print Average of Array printAverageOfArray(arr). Analyze an array’s values and print the average.
+
+function arrSum(arr){
+    let sumHold = 0;
+    for (let i = 0; i < arr.length; i++){
+        sumHold += arr[i];
+    }
+    return sumHold
+}
+console.log(arrSum([1, 2, 3, 4]));
+
+// Print Max, Min, Average Array Values printMaxMinAverageArrayVals(arr). Given an array, print the max, min and average values for that array.
+
+function mmaArr(arr){
+    let max = [0];
+    let min = [0];
+    let avg = 0;
+
+    for (let i = 0; i < arr.length; i++){
+        avg += arr[i]
+        if (arr[i] > max){
+            max = arr[i]
+        }
+        if (arr[i] < min){
+            min = arr[i]
+        }
+    }
+    let avg = sum / arr.length;
+    return [min, max, avg];
+}
+console.log(mmaArr(mmaArr[1, 2, 3, 4]));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

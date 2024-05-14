@@ -18,7 +18,11 @@ class Employee:
 Eliza = Employee(189823,100000,"COO")
 Helen = Employee(188590, 150000, "CEO")
 
+def printEmployeeInfo(self):
+    print(f"{self.name} ID")
+
+
 print("Eliza's ID: ", Eliza.ID)
 print("Helen's ID: ", Helen.ID, Helen.salary)
-Helen.printEmployeeInfo()
+
 

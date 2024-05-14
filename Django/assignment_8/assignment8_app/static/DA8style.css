@@ -1,0 +1,44 @@
+table.styledTable {
+    border: 1px solid #1C6EA4;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.styledTable td, table.styledTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  table.styledTable tbody td {
+    font-size: 13px;
+  }
+  table.styledTable tr:nth-child(even) {
+    background: #CFCFCF;
+  }
+  table.styledTable thead {
+    background: #888888;
+    border-bottom: 2px solid #444444;
+  }
+  table.styledTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+  }
+  table.styledTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.styledTable tfoot td {
+    font-size: 14px;
+  }
+  table.styledTable tfoot .links {
+    text-align: right;
+  }
+  table.styledTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }

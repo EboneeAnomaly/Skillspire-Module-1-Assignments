@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User Page</title>
+</head>
+
+<body>
+    <h1>Edit User {{ Users.id }}</h1>
+
+    <form action="/users/{{ .id }}" method="POST">
+        <label>First Name:</label>
+        <input type="text" name="firstName" id="firstName">
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" id="lastName">
+
+        <label>Email:</label>
+        <input type="text" name="email" id="email">
+
+        <button type="submit">Update</button>
+
+    </form>
+
+    <a href="#">Show</a>
+    <a href="#">Go Back</a>
+</body>
+</html>
